@@ -3,7 +3,7 @@ layout: post
 title: "Szilaj gyönyörnek vége is szilaj - A Westworld margójára"
 featured-image: /assets/pi/westworld/2.jpg
 tags: [westworld, shakespeare, king lear, tempest, romeo and juliet]
-desc: "Irodalmi és művészeti témájú blog: irodalom és egyéb emberi lim-lomok. Utánam, olvasó!"
+desc: "Mi lehet a közös Shakespeare-ben és a robotokban? Kritikai esszé az HBO legújabb sci-fi sorozatáról. A Westworld shakespeare-i idézeteinek felfejtése."
 ---
 
 Az HBO legújabb, nagy port kavaró sorozatát aligha kell bemutatnom az olvasók
