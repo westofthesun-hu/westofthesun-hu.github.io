@@ -3284,3 +3284,7 @@ div.content > section > p > img {
 div.content > section > div.footnotes > ol {
 	list-style-type: decimal;
 }
+
+em {
+	font-style: italic;
+}
