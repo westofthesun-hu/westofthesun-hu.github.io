@@ -2,7 +2,8 @@
 layout: post
 title: "Szilaj gyönyörnek vége is szilaj - A Westworld margójára"
 featured-image: /assets/pi/westworld/2.jpg
-tags: [westworld, shakespeare, kinglear, tempest, romeoandjuliet]
+tags: [westworld, shakespeare, king lear, tempest, romeo and juliet]
+desc: "Irodalmi és művészeti témájú blog: irodalom és egyéb emberi lim-lomok. Utánam, olvasó!"
 ---
 
 Az HBO legújabb, nagy port kavaró sorozatát aligha kell bemutatnom az olvasók
@@ -81,13 +82,13 @@ részben mondott beszédében összegzi örökségét, és átadja hatalmát bir
 lakóinak. Prospero az utolsó felvonásban így búcsúzik el varázshatalmától,
 illetve a sziget felett való uralmától:
 
-> Ha megpendítettem
-> az égi zenét - éppen most csinálom -,
-> hogy célomat szolgálja ez a könnyen
-> lebegő bűbáj, pálcám eltöröm,
-> több ölnyi mélyre ásom el a földbe,
-> és mélyebbre, mint mérőón hatol,
-> hajítom könyvemet. 
+    Ha megpendítettem
+    az égi zenét - éppen most csinálom -,
+    hogy célomat szolgálja ez a könnyen
+    lebegő bűbáj, pálcám eltöröm,
+    több ölnyi mélyre ásom el a földbe,
+    és mélyebbre, mint mérőón hatol,
+    hajítom könyvemet.
 
 A másik fontos idézet részben a Lear királyból, és részben a IV. Henrikből
 származik: “By my/Most/Mechanical and dirty hand (IV. Henrik II. rész, 5.
@@ -116,19 +117,19 @@ emlékezni kezd, és hasonlóképp Pistolhoz ő maga is veszélyessé válik, b�
 tudása köszön vissza a robot által használt irodalmi allúziókban, A sorozat
 első részében pedig a következő jóslatot mondja lányának, Doloresnek:
 
-> These violent delights have violent ends.
+    These violent delights have violent ends.
 
 Ez a Rómeó és Júlia második felvonásának hatodik színében hangzik el, Lőrinc
 barát így figyelmezteti Rómeót a két szerelmes összeesketése előtt a túlzott
 hevű szenvedély veszélyeire:
 
-> Szilaj gyönyörnek vége is szilaj,
-> Lázába pusztul el, mint tűz s a lőpor,
-> Mely csókolódzva hal meg: lásd, a méz is
-> Csömörletes, mihelyt túlontúl-édes.
-> S ennen-ízébe zápul el az étvágy.
-> Lassan szeress s szeretni fogsz sokáig.
-> Elkésik az, ki sürgeti bokáit.
+    Szilaj gyönyörnek vége is szilaj,
+    Lázába pusztul el, mint tűz s a lőpor,
+    Mely csókolódzva hal meg: lásd, a méz is
+    Csömörletes, mihelyt túlontúl-édes.
+    S ennen-ízébe zápul el az étvágy.
+    Lassan szeress s szeretni fogsz sokáig.
+    Elkésik az, ki sürgeti bokáit.
 
 Ahogyan Rómeó és Júlia szerelmének, úgy a park látogatói által átélt
 „kalandoknak” sem lehet jó végük; természetüknél fogva magukban hordozzák a
@@ -146,8 +147,8 @@ pedig utalhat egyben a robotok által lakott parkra, de a külső világra is. M
 az idézet az öntudatra ébredésre, illetve az egyénnek a környezetében betöltött
 szerepére utal:
 
-> Születésünkkor sírunk, hogy a bolondok
-> E roppant színpadára feljövünk.
+    Születésünkkor sírunk, hogy a bolondok
+    E roppant színpadára feljövünk.
 
 Ahogy megtudhatjuk, az öntudathoz az Útvesztőn keresztül lehet eljutni, a
 labirintus tehát a psziché metaforája. A park színterén ébred önmagára Dolores,

@@ -1,14 +1,15 @@
 ---
 layout: default
 title: "Bejegyzések"
+desc: "Irodalmi és művészeti témájú blog: irodalom és egyéb emberi lim-lomok. Utánam, olvasó!"
 ---
 
 			<!-- Main -->
 				<article id="main">
 					<header class="special container">
-						<span class="icon fa-tablet"></span>
+						<span class="icon fa-snowflake-o"></span>
 						<h2>Tartalom</h2>
-						<p>Ide is lehetne valami frappánsat írni.</p>
+						<p>A következő bejegyzések közül válogathatsz:</p>
 					</header>
 
 					<!-- One -->
@@ -59,19 +60,35 @@ title: "Bejegyzések"
 										<div class="sidebar">
 											<section>
 												<header>
-													<h3>Tag felhő</h3>
+													<h3>Tag-ek</h3>
 												</header>
-												<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
+												<p>
+												{% assign alltags = "" %}
+												{% for post in site.posts %}
+												{% for tag in post.tags %}
+												{% assign alltags = alltags | append: tag %}
+												{% assign alltags = alltags | append: "," %}
+												{% endfor %}
+												{% endfor %}
+												{% assign alltags = alltags | split: "," | sort | uniq %}
+												{% for tag in alltags %}
+													<span class="tag">
+														<span class="arrow"></span>
+														{{ tag }}
+													</span>
+												{% endfor %}
+												</p>
 											</section>
 
 											<section>
 												<header>
-													<h3>Ajánló</h3>
+													<h3>Kedvcsináló</h3>
 												</header>
-												<p>Ide egy random poszt tartalma kerül.</p>
+												{% assign p = site.posts | sample %}
+												<p>{{ p.excerpt | strip_html }}</p>
 												<footer>
 													<ul class="buttons">
-														<li><a href="#" class="button small">Tovább</a></li>
+														<li><a href="{{ p.url }}" class="button small">Tovább &raquo;</a></li>
 													</ul>
 												</footer>
 											</section>

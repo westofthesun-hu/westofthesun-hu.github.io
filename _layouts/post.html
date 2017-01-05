@@ -5,7 +5,7 @@ layout: default
 			<!-- Main -->
 				<article id="main">
 					<header class="special container">
-						<span class="icon fa-tablet"></span>
+						<span class="icon fa-diamond"></span>
 						<h2>{{ page.title }}</h2>
 						<p>{{ page.date | date: "%Y-%m-%d" }}</p>
 					</header>
@@ -35,22 +35,36 @@ layout: default
 										<div class="sidebar">
 											<section>
 												<header>
-													<h3>Tag felhő</h3>
+													<h3>Tag-ek</h3>
 												</header>
-												<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
+												<p>
+												{% assign tags = page.tags | sort | uniq %}
+												{% for tag in tags %}
+													<span class="tag">
+														<span class="arrow"></span>
+														{{ tag }}
+													</span>
+												{% endfor %}
+												</p>
 											</section>
 
+											{% for i in (0..9) %}
+											{% assign p = site.posts | sample %}
+											{% if p.url != page.url %}
 											<section>
 												<header>
-													<h3>Ajánló</h3>
+													<h3>Kedvcsináló</h3>
 												</header>
-												<p>Ide egy random poszt tartalma kerül.</p>
+												<p>{{ p.excerpt | strip_html }}</p>
 												<footer>
 													<ul class="buttons">
-														<li><a href="#" class="button small">Tovább</a></li>
+														<li><a href="{{ p.url }}" class="button small">Tovább &raquo;</a></li>
 													</ul>
 												</footer>
 											</section>
+											{% break %}
+											{% endif %}
+											{% endfor %}
 										</div>
 
 								</div>
