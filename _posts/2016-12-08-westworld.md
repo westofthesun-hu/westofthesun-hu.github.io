@@ -99,7 +99,7 @@ azért tartottam fontosnak angolul szerepeltetni itt az idézetet, mert az
 eredetiben használt „mechanical” szó egy nyilvánvaló rájátszás Abernathy (és a
 többi robot) mivoltára. Valószínűleg a szó elsődleges jelentése a nagy drámaíró
 korában nem a gépi, gépies volt, ahogy ezt a magyar fordításból sejthetjük: „A
-legdühösb, kiméletlen kezek.” A shakespeareswords.com alapján Shakespeare
+legdühösb, kiméletlen kezek.” A [shakespeareswords.com](http://www.shakespeareswords.com/Glossary.aspx?Ref=mechanical&ID=10713) alapján Shakespeare
 korában a mechanical szó elsődleges jelentése melléknévként az alázatos,
 szolgai, illetve az aljas és alantas volt. A szóhasználat tehát nemcsak a mai
 értelmet, de egyben a korábbi jelentést is felidézi, utalva arra, ahogy az
