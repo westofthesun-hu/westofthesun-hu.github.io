@@ -52,7 +52,7 @@ desc: "Irodalmi és művészeti témájú blog: irodalom és egyéb emberi lim-l
 										<p>
 										{% for p in site.posts %}
 										{% if p.tags contains tag %}
-											<a href="{{ p.url }}" title="{{ p.title }}" class="imgicon"><img src="{{ p.featured-image }}" /></a>
+											<a href="{{ p.url }}" title="{{ p.title }}" class="imgicon"><img src="{{ p.featured-image }}" alt="{{ p.title }}" /></a>
 										{% endif %}
 										{% endfor %}
 										</p>
