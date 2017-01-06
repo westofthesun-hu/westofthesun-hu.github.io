@@ -26,9 +26,13 @@
 					<h1 id="logo"><a href="/">Méliusz <span>Luca naplója</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li{% if page.url == '/'%} class="current"{% endif %}><a href="/">Főoldal</a></li>
-							<li{% if page.url == '/blog/' %} class="current"{% endif %}><a href="/blog/">Blog</a></li>
-							<li{% if page.url == '/about/' %} class="current"{% endif %}><a href="/about/">Rólam</a></li>
+							{% for p in site.pages %}
+							{% if p.menu %}
+							<li{% if page.url == p.url %} class="current"{% endif %}>
+								<a href="{{ p.url }}">{{ p.menu }}</a>
+							</li>
+							{% endif %}
+							{% endfor %}
 						</ul>
 					</nav>
 				</header>
