@@ -1,5 +1,7 @@
 # vim: set expandtab ts=2:
 name: West of the Sun
+author: Méliusz Luca
+email: luca@westofthesun.hu
 markdown: kramdown
 defaults:
   -
