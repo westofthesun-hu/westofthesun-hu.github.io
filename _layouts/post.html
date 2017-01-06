@@ -76,7 +76,7 @@ layout: default
 									<dd itemprop="name"><a href="/about/">{{ site.author }}</a></dd>
 								</dl>
 								</div>
-								<meta itemprop="publisher" itemref="author" />
+								<span itemprop="publisher"><meta itemscope itemref="author" /></span>
   {% if page.comments %}
   {% include disqus.html %}
   {% endif %}
