@@ -40,10 +40,10 @@ layout: default
 												<p>
 												{% assign tags = page.tags | sort | uniq %}
 												{% for tag in tags %}
-													<span class="tag">
+													<a href="/tags/" class="tag">
 														<span class="arrow"></span>
 														{{ tag }}
-													</span>
+													</a>
 												{% endfor %}
 												</p>
 											</section>

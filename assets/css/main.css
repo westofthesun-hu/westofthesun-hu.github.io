@@ -3288,3 +3288,19 @@ div.content > section > div.footnotes > ol {
 em {
 	font-style: italic;
 }
+
+.imgicon img {
+	height: 5em;
+    border-radius: 4px;
+	border: 1px solid #ddd;
+	box-shadow: 2px 2px 4px 4px #888;
+}
+
+.imgicon img:hover {
+	border: 0;
+	box-shadow: 2px 2px 4px #888;
+}
+
+.imgicon {
+	border: 0;
+}
