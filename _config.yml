@@ -8,3 +8,5 @@ defaults:
       type: "posts"
     values:
       comments: true
+gems:
+  - jekyll-sitemap
