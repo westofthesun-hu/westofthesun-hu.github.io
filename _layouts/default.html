@@ -15,6 +15,8 @@
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Atom feed" href="/blog/atom.xml">
 	</head>
 	<body class="right-sidebar">
 		<div id="page-wrapper">
@@ -24,9 +26,12 @@
 					<h1 id="logo"><a href="/">Méliusz <span>Luca naplója</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li{% if page.url == '/'%} class="current"{% endif %}><a href="/">Főoldal</a></li>
-							<li{% if page.url == '/blog/' %} class="current"{% endif %}><a href="/blog/">Blog</a></li>
-							<li{% if page.url == '/about/' %} class="current"{% endif %}><a href="/about/">Rólam</a></li>
+							{% assign items = site.pages | where_exp: "i", "i.menu" | sort: "weight" %}
+							{% for p in items %}
+							<li{% if page.url == p.url %} class="current"{% endif %}>
+								<a href="{{ p.url }}">{{ p.menu }}</a>
+							</li>
+							{% endfor %}
 						</ul>
 					</nav>
 				</header>

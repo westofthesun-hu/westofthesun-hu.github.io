@@ -2,6 +2,8 @@
 layout: about
 title: "Rólam"
 desc: "Irodalmi és művészeti témájú blog: irodalom és egyéb emberi lim-lomok. Utánam, olvasó!"
+menu: "Rólam"
+weight: 30
 ---
 
 	Élet és irodalom közül mindig az
