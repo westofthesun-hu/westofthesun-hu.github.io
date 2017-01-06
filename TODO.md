@@ -1,6 +1,5 @@
 # Before Release
 
-* sitemap
 * rss/atom feed
 * bottom links
 * menu refactor
