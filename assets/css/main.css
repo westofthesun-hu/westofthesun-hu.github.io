@@ -3235,3 +3235,16 @@ em {
 .imgicon {
 	border: 0;
 }
+
+dl.businesscard {
+	background: #eee;
+	padding: 1em;
+}
+
+dl.businesscard dt:after {
+	content: ":";
+}
+
+dl.businesscard dd {
+	padding-left: 2em;
+}
