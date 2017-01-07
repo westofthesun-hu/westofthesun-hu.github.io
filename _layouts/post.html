@@ -3,11 +3,20 @@ layout: default
 ---
 
 			<!-- Main -->
-				<article id="main">
+				<article id="main" itemscope itemtype="http://schema.org/BlogPosting" itemid="{{ site.url }}{{ page.id }}">
+					<meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/Blog" itemid="{{ site.url }}"/>
 					<header class="special container">
 						<span class="icon fa-diamond"></span>
-						<h2>{{ page.title }}</h2>
+						<h2 itemprop="headline">{{ page.title }}</h2>
 						<p>{{ page.date | date: "%Y-%m-%d" }}</p>
+						<meta itemprop="datePublished" content="{{ page.date | date: "%FT%T%z" }}"/>
+						<meta itemprop="dateModified" content="{{ page.date | date: "%FT%T%z" }}"/>
+						<meta itemprop="description" content="{{ page.desc }}"/>
+						<span itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+							<meta itemprop="url" content="{{ site.url }}{{ page.featured-image }}">
+							<meta itemprop="width" content="489">
+							<meta itemprop="height" content="262">
+						</span>
 					</header>
 
 					<!-- One -->
@@ -21,9 +30,6 @@ layout: default
 											<section>
 
 											{{ content }}
-  {% if page.comments %}
-  {% include disqus.html %}
-  {% endif %}
 
 											</section>
 										</div>
@@ -69,6 +75,28 @@ layout: default
 
 								</div>
 							</div>
+
+							<footer>
+
+								<p itemprop="author" itemscope itemtype="https://schema.org/Person">
+									Írta: <span itemprop="name">{{ site.author }}</span>
+								</p>
+
+								<span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+									<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+										<meta itemprop="url" content="{{ site.url }}/logo.png">
+										<meta itemprop="width" content="85">
+										<meta itemprop="height" content="70">
+									</span>
+									<meta itemprop="name" content="{{ site.name }}">
+								</span>
+
+								{% if page.comments %}
+								{% include disqus.html %}
+								{% endif %}
+
+							</footer>
+
 						</section>
 
 					<!-- Two -->
