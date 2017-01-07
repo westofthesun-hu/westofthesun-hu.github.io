@@ -10,7 +10,7 @@ layout: default
 						<p>{{ page.date | date: "%Y-%m-%d" }}</p>
 						<meta itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}T00:00Z" />
 						<meta itemprop="description" content="{{ page.desc }}" />
-						<meta itemprop="image" content="{{ site.url }}{{ page.featured-image }}" itemtype="https://schema.org/URL" />
+						<meta itemprop="image" content="{{ page.featured-image }}" />
 					</header>
 
 					<!-- One -->
@@ -70,9 +70,10 @@ layout: default
 								</div>
 							</div>
 							<footer>
-								<h3 itemprop="author publisher" itemscope itemtype="https://schema.org/Person">
-							     Szerző: <span itemprop="name">{{ site.author }}</span>
-								</h3>
+								<dl itemprop="author publisher" class="businesscard" itemscope itemtype="http://schema.org/Person">
+									<dt>Szerző</dt>
+									<dd itemprop="name"><a href="/about/">{{ site.author }}</a></dd>
+								</dl>
   {% if page.comments %}
   {% include disqus.html %}
   {% endif %}
