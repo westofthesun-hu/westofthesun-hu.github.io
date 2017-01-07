@@ -5,7 +5,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html lang="hu" xml:lang="hu">
-	<head>
+	<head itemscope itemtype="http://schema.org/WebSite">
 		<meta charset="utf-8" />
 		<meta name="description" content="{{ page.desc }}" />
 		<title>{{ site.name }} - {{ page.title }}</title>
@@ -17,6 +17,8 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Atom feed" href="/blog/atom.xml">
+		<meta itemprop="name" content="{{ site.name }}"/>
+		<link rel="canonical" href="{{ site.url }}" itemprop="url" />
 	</head>
 	<body class="right-sidebar">
 		<div id="page-wrapper">
