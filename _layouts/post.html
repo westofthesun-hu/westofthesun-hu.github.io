@@ -70,10 +70,13 @@ layout: default
 								</div>
 							</div>
 							<footer>
-								<dl itemprop="author publisher" class="businesscard" itemscope itemtype="http://schema.org/Person">
+								<div itemprop="author">
+								<dl id="author" class="businesscard" itemscope itemtype="http://schema.org/Person">
 									<dt>Szerző</dt>
 									<dd itemprop="name"><a href="/about/">{{ site.author }}</a></dd>
 								</dl>
+								</div>
+								<span itemprop="publisher"><meta itemscope itemref="author" /></span>
   {% if page.comments %}
   {% include disqus.html %}
   {% endif %}
