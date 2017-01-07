@@ -19,6 +19,7 @@
 		<link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Atom feed" href="/blog/atom.xml">
 		<meta itemprop="name" content="{{ site.name }}"/>
 		<link rel="canonical" href="{{ site.url }}" itemprop="url" />
+		<link itemprop="publisher" href="#org" />
 	</head>
 	<body class="right-sidebar">
 		<div id="page-wrapper">
@@ -43,10 +44,17 @@
 			<!-- Footer -->
 				<footer id="footer">
 
-					<ul class="icons">
-						<li><a href="https://twitter.com/luca_melius" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+					<ul class="icons" itemid="#org" itemscope itemtype="https://schema.org/Organization">
+						<link itemprop="url" href="{{ site.url }}" />
+						<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+							<meta itemprop="url" content="{{ site.url }}/logo.png">
+							<meta itemprop="width" content="85">
+							<meta itemprop="height" content="70">
+						</span>
+						<meta itemprop="name" content="{{ site.name }}">
+						<li><a itemprop="sameAs" href="https://twitter.com/luca_melius" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="https://github.com/LucaMelius" class="icon circle fa-github"><span class="label">Github</span></a></li>
+						<li><a itemprop="sameAs" href="https://github.com/westofthesun-hu" class="icon circle fa-github"><span class="label">Github</span></a></li>
 					</ul>
 
 					<ul class="copyright">
