@@ -37,14 +37,14 @@ weight: 20
 										<header>
 											<h3>{{ post.date | date: "%Y-%m-%d" }}</h3>
 										</header>
-										<p><a href="{{ post.url }}">{{ post.title }}</a></p>
+										<p><a href="{{ post.url }}" hreflang="{{ site.lang }}">{{ post.title }}</a></p>
 									</section>
 
 								</div>
 								<div class="6u 12u(narrower)">
 
 									<section>
-										<a href="{{ post.url }}" class="image featured" title="{{ post.title }}"><img src="{{ post.featured-image }}" alt="{{ post.title }}" /></a>
+										<a href="{{ post.url }}" class="image featured" title="{{ post.title }}" hreflang="{{ site.lang }}"><img src="{{ post.featured-image }}" alt="{{ post.title }}" /></a>
 									</section>
 
 								</div>
@@ -74,7 +74,7 @@ weight: 20
 												{% endfor %}
 												{% assign alltags = alltags | split: "," | sort | uniq %}
 												{% for tag in alltags %}
-													<a href="/tags/" class="tag">
+													<a href="/tags/" class="tag" hreflang="{{ site.lang }}">
 														<span class="arrow"></span>
 														{{ tag }}
 													</a>
@@ -90,7 +90,7 @@ weight: 20
 												<p>{{ p.excerpt | strip_html }}</p>
 												<footer>
 													<ul class="buttons">
-														<li><a href="{{ p.url }}" class="button small">Tovább &raquo;</a></li>
+														<li><a href="{{ p.url }}" class="button small" hreflang="{{ site.lang }}">Tovább &raquo;</a></li>
 													</ul>
 												</footer>
 											</section>

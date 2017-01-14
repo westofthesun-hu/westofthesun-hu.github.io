@@ -3,6 +3,7 @@ name: West of the Sun
 author: Méliusz Luca
 email: luca@westofthesun.hu
 markdown: kramdown
+lang: hu
 defaults:
   -
     scope:

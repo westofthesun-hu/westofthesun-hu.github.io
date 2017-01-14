@@ -51,7 +51,7 @@ weight: 10
 								<div class="6u 12u(narrower)">
 
 									<section>
-										<a href="{{ post.url }}" class="image featured" title="{{ post.title }}"><img src="{{ post.featured-image }}" alt="{{ post.title }}" /></a>
+										<a href="{{ post.url }}" class="image featured" title="{{ post.title }}" hreflang="{{ site.lang }}"><img src="{{ post.featured-image }}" alt="{{ post.title }}" /></a>
 										<header>
 											<h3>{{ post.title }}</h3>
 										</header>
@@ -65,7 +65,7 @@ weight: 10
 
 							<footer class="major">
 								<ul class="buttons">
-									<li><a href="blog" class="button">És ez nem minden!</a></li>
+									<li><a href="blog" class="button" hreflang="{{ site.lang }}">És ez nem minden!</a></li>
 								</ul>
 							</footer>
 
