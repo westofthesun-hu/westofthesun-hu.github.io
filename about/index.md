@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Rólam"
-desc: "Irodalmi és művészeti témájú blog: irodalom és egyéb emberi lim-lomok. Utánam, olvasó!"
+desc: "A West of The Sun blog szerzőjének bemutatkozása. Irodalmi, film-és képzőművészeti témájú blog. "
 menu: "Rólam"
 weight: 30
 ---
