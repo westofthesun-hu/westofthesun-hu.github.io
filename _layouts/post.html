@@ -56,7 +56,7 @@ layout: default
 												<p>
 												{% assign tags = page.tags | sort | uniq %}
 												{% for tag in tags %}
-													<a href="/tags/" class="tag" hreflang="{{ site.lang }}">
+													<a href="/tags/#tag-{{ tag | slugify }}" class="tag" hreflang="{{ site.lang }}">
 														<span class="arrow"></span>
 														{{ tag }}
 													</a>

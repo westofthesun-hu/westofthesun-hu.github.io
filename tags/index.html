@@ -34,7 +34,7 @@ desc: "Irodalmi és művészeti témájú blog: irodalom és egyéb emberi lim-l
 	{% endfor %}
 	{% assign alltags = alltags | split: "," | sort | uniq %}
 	{% for tag in alltags %}
-	    <li>
+	    <li id="tag-{{ tag | slugify }}">
 							<div class="row">
 								<div class="6u 12u(narrower)">
 
