@@ -74,7 +74,7 @@ weight: 20
 												{% endfor %}
 												{% assign alltags = alltags | split: "," | sort | uniq %}
 												{% for tag in alltags %}
-													<a href="/tags/" class="tag" hreflang="{{ site.lang }}">
+													<a href="/tags/#tag-{{ tag | slugify }}" class="tag" hreflang="{{ site.lang }}">
 														<span class="arrow"></span>
 														{{ tag }}
 													</a>
